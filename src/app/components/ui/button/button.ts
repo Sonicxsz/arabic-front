@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+
 
 @Component({
   selector: 'app-button',
@@ -7,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './button.scss'
 })
 export class Button {
-
+ 
 }
+
+
+// Реализовать два варианта 'primary' | 'secondary'

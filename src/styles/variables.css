@@ -1,0 +1,11 @@
+:root{
+    --BgColor: #1a141f; 
+    --BgSecondary: #2e2e2e;
+    --PrimaryColor: #13d879; 
+    --SecondColor: #d2e0d9; 
+    --WarnColor:#e3c425;
+    --ErrColor:#ea5353;
+    --BtnPrimaryBg: #3585ed;
+    --BtnSecondaryBg: transparent;
+
+}

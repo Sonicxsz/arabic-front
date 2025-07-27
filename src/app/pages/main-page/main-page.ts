@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Text } from '@ui';
+
+
 @Component({
   selector: 'app-main-page',
   imports: [Text],
@@ -8,4 +10,8 @@ import { Text } from '@ui';
 })
 export class MainPage {
 
+
+  sayHello(){
+    console.log('hello')
+  }
 }

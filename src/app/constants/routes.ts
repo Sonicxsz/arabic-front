@@ -1,5 +1,5 @@
 export const ROUTES = {
-    MainPage: 'MainPage',
-    UserProfile: 'UserProfile',
-    LearningPage: 'LearningPage'
+    MainPage: 'main',
+    UserProfile: 'profile',
+    LearningPage: 'learning'
 } as const 
