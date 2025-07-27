@@ -3,6 +3,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./src",
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
@@ -14,9 +15,8 @@
     "importHelpers": true,
     "target": "ES2022",
     "module": "preserve",
-    "baseUrl": "src",
     "paths": {
-      "@ui/*":["app/ui/*"]
+      "@ui": ["app/components/ui/index.ts"]
     }
   },
   "angularCompilerOptions": {

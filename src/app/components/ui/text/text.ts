@@ -1,14 +1,14 @@
-import { Component, Input, input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-text',
   imports: [],
+  standalone: true,
   templateUrl: './text.html',
   styleUrl: './text.scss'
 })
 export class Text {
-  @Input() size: 'XL' | 'L' | 'S' = "S"
-
-  
+  @Input() size: 'xl' | 'l' | 'm' | 's' = "m"
+  @Input() color: 'primary' | 'secondary' | 'warning' | 'error' = "primary"
 
 }
