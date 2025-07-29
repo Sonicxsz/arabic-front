@@ -1,0 +1,8 @@
+:host{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+.content{
+    background: var(--SecondColor);
+    padding: 20px;
+}

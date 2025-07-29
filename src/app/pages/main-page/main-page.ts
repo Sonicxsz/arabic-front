@@ -4,7 +4,7 @@ import { Text } from '@ui';
 
 @Component({
   selector: 'app-main-page',
-  imports: [Text],
+  imports: [ Text ],
   templateUrl: './main-page.html',
   styleUrl: './main-page.scss'
 })
