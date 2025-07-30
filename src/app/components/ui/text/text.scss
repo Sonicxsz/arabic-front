@@ -24,11 +24,9 @@
 
 .secondary{
     color: var(--SecondColor);
-
 }
 
 .warning{
-
     color: var(--WarnColor);
 }
 
@@ -48,4 +46,11 @@
 }
 .light {
     font-weight: 300;
+}
+
+.visiblePrimary{
+    &:hover,
+    :focus-visible{
+        color: var(--PrimaryColor);
+    }
 }
