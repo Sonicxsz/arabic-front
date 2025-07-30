@@ -8,7 +8,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrl: './button.scss'
 })
 export class Button {
- 
+  @Input() btnClick: 'primary' | 'secondary' = 'primary'
 }
 
 
