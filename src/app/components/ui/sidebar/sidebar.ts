@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { SvgIcon } from '../svg-icon/svg-icon';
 import { FormsModule } from '@angular/forms';
 import { Text } from "../text/text";
+import { Routes } from 'app/services/routes';
 
 @Component({
   selector: 'app-sidebar',
@@ -11,22 +12,23 @@ import { Text } from "../text/text";
   styleUrl: './sidebar.scss'
 })
 export class Sidebar {
+  routes = inject(Routes)
 
-    menuItems = [
+  menuItems = [
     {
       label: 'Главная страница',
       icon: 'main',
-      link: ''    
+      link: this.routes.ROUTES.MainPage    
     },
     {
       label: 'Пользователь',
       icon: 'profile',
-      link: 'profile'    
+      link: this.routes.ROUTES.UserProfile    
     },
     {
       label: 'Обучение',
       icon: 'learning',
-      link: 'learning'    
+      link: this.routes.ROUTES.LearningPage    
     }
   ]
 }

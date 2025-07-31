@@ -1,8 +1,8 @@
-:host{
+.sidebar{
     display: grid;
     grid-template-columns: 300px 1fr;
 }
-.content{
+.pages{
     background: var(--SecondColor);
     padding: 20px;
 }
