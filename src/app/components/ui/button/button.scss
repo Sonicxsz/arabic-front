@@ -1,15 +1,17 @@
 .primary{
     background: var(--BtnPrimaryBg);
 }
+.secondary{
+    background: var(--BtnSecondaryBg);
+}
 .big{
     border-radius: 5px;
     width: 200px;
     height: 40px;
     border: none;
-    background: var(--BtnPrimaryBg);
     cursor: pointer;
     &:hover,
     :focus-visible{
-        background: var(--secondary);
+        background: var(--BtnPrimaryBg);
     }
 }

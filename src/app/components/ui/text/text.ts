@@ -11,5 +11,4 @@ export class Text {
   @Input() size: 'xl' | 'l' | 'm' | 's' = "m"
   @Input() color: 'primary' | 'secondary' | 'warning' | 'error' = "primary"
   @Input() weight: 'bold' | 'semibold' | 'regular' | 'light' = "regular"
-  @Input() focusVisible: 'visiblePrimary' = 'visiblePrimary'
 }

@@ -48,9 +48,3 @@
     font-weight: 300;
 }
 
-.visiblePrimary{
-    &:hover,
-    :focus-visible{
-        color: var(--PrimaryColor);
-    }
-}
