@@ -18,6 +18,10 @@
     font-size: 16px;
 }
 
+.xs {
+    font-size: 12px;
+}
+
 .primary{
     color: var(--PrimaryColor);
 }
@@ -34,6 +38,12 @@
     color: var(--ErrColor);
 }
 
+.light{
+    color: var(--LightColor);
+}
+
+
+
 .bold {
     font-weight: 700;
 }
@@ -48,9 +58,3 @@
     font-weight: 300;
 }
 
-.visiblePrimary{
-    &:hover,
-    :focus-visible{
-        color: var(--PrimaryColor);
-    }
-}
