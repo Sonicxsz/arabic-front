@@ -9,6 +9,6 @@ import { Component, Input } from '@angular/core';
 })
 export class Text {
   @Input() size: 'xl' | 'l' | 'm' | 's' | 'xs' = "m"
-  @Input() color: 'primary' | 'secondary' | 'warning' | 'error' | 'light' | 'sex' = "primary"
+  @Input() color: 'primary' | 'secondary' | 'warning' | 'error' | 'light' = "primary"
   @Input() weight: 'bold' | 'semibold' | 'regular' | 'light' = "regular"
 }
