@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './text.scss'
 })
 export class Text {
-  @Input() size: 'xl' | 'l' | 'm' | 's' = "m"
-  @Input() color: 'primary' | 'secondary' | 'warning' | 'error' = "primary"
+  @Input() size: 'xl' | 'l' | 'm' | 's' | 'xs' = "m"
+  @Input() color: 'primary' | 'secondary' | 'warning' | 'error' | 'light' = "primary"
   @Input() weight: 'bold' | 'semibold' | 'regular' | 'light' = "regular"
 }
