@@ -7,10 +7,11 @@
     <ul class="sidebar__list">
         @for (menuItem of menuItems; track menuItem.link) {
             <li class="sidebar__list-item">
+                   
                 <app-text size="s" 
                     weight="bold" 
-                    color="secondary" 
-                    visiblePrimary="visiblePrimary">
+                    color="secondary"
+                    >
                     <a class="sidebar__link"
                         [routerLink]="[menuItem.link]">
                         <svg class="sidebar__icon"

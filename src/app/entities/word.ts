@@ -4,4 +4,3 @@ export type Word = {
     id: number;
     image_src: string,
 }
-

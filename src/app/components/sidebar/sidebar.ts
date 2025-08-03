@@ -1,9 +1,9 @@
 import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { SvgIcon } from '../svg-icon/svg-icon';
+import { SvgIcon } from '../ui/svg-icon/svg-icon';
 import { FormsModule } from '@angular/forms';
-import { Text } from "../text/text";
-import { ROUTES } from '../../../constants/routes';
+import { Text } from "../ui/text/text";
+import { ROUTES } from '../../constants/routes';
 @Component({
   selector: 'app-sidebar',
   imports: [FormsModule, RouterLink, SvgIcon, Text],

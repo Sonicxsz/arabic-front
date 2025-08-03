@@ -1,13 +1,14 @@
-import { Component } from '@angular/core';
-import { Word } from 'app/entities/word';
-import { Text, Button } from '@ui';
+import { Component, Input } from '@angular/core';
+import { Card } from "./card/card";
 
 @Component({
   selector: 'app-learning-page',
-  imports: [Text, Button],
+  imports: [Card],
   templateUrl: './learning-page.html',
   styleUrl: './learning-page.scss'
 })
 export class LearningPage {
-  words: Word[] = []
+  cardVariantClick(message: string) {
+    console.log(`Ввариант ${message}`);
+  }
 }

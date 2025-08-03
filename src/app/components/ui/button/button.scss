@@ -1,23 +1,23 @@
-.primary{
-    background: var(--BtnPrimaryBg);
-}
-.secondary{
-    background: var(--BtnSecondaryBg);
-}
-.xl{
-    width: 200px;
-    height: 40px;
-}
-.l{
-    width: 120px;
-    height: 25px;
-}
-.big{
-    border-radius: 5px;
-    border: none;
+.btn{
+    width: 100%;
+    border-radius: 4px;
     cursor: pointer;
     &:hover,
     :focus-visible{
         background: var(--PrimaryColor);
     }
+}
+// padding
+.l{
+    padding: 5px 60px;
+}
+.m{
+    padding: 4px 60px;
+}
+// color
+.primary{
+    background: var(--BtnPrimaryBg);
+}
+.secondary{
+    background: var(--BtnSecondaryBg);
 }
