@@ -1,58 +1,22 @@
 .card{
-    width: 300px;
-    height: 450px;
-    background: var(--ScaleColor);
+    width: 100%;
+    text-align: center;
+    background: var(--BgSecondary);
     border-radius: 8px;
-    display: block;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5px;
-    padding-top: 10px;
-    position: relative;
+    padding: 8px;
     &__img-wrapper{
         margin-top: 10px;
     }
     &__img{
-        position: relative;
         margin-top: 10px;
         margin-bottom: 10px;
-        width: 200px;
-        height: 170px;
+        width: 180px;
+        height: 150px;
         border-radius: 10px;
     }
-    &__icon{
-        width: 15px;
-        height: 15px;
-    }
-    &__btn-icon{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 43%;
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-        color: var(--LightColor);
-        background: var(--BtnPrimaryBg);
-        border: none;
-        cursor: pointer;
-        &:hover,
-        :focus-visible{
-            width: 40px;
-            height: 40px;
-            background: var(--PrimaryColor);
-        }
-    }
     &__btn-wrapper{
-        display: flex;
-        flex-direction: column;
-        gap: 3px;
+        display: grid;
+        grid-gap: 5px;
         margin-top: 10px;
-    }
-    &__btn-end{
-        position: absolute;
-        margin-top: 390px;
     }
 }

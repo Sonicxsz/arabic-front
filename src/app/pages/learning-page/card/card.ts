@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Text, Button } from "@ui";
+import { Word } from 'app/interface/word';
 
 @Component({
   selector: 'app-card',
@@ -8,13 +9,11 @@ import { Text, Button } from "@ui";
   styleUrl: './card.scss'
 })
 export class Card {
-  @Output() uppCardEventClick = new EventEmitter<string>();
+  @Input() dataWord!: Word
+  
+  @Output() onOptionSelect = new EventEmitter<string>();
 
-  cardVariantClick(name: string) {
-    this.uppCardEventClick.emit(name)
+  selectOption(variant: string) {
+    this.onOptionSelect.emit(variant)
   }
-
-  options: {name:string}[] = [
-    {name: "1"}, {name:'2'}, {name:"3"}
-  ]
 }

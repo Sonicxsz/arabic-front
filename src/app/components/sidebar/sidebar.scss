@@ -1,6 +1,6 @@
 .sidebar{
     background: var(--BgColor);
-    height: 100%;
+    width: 100%;
     padding: 8px;
     &__logo-img{
         width: 200px;
@@ -8,9 +8,6 @@
     }
     &__list-item{
         padding: 15px;
-
-        
- 
     }
     &__link{
         display: flex;
@@ -31,6 +28,4 @@
         width: 16px;
         height: 16px;
     }
-
-
 }

@@ -1,6 +1,7 @@
-export type Word = {
+export interface Word {
     arabic: string,
     russian: string,
-    id: number;
+    id: number,
     image_src: string,
+    option: string[]
 }

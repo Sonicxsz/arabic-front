@@ -1,11 +1,8 @@
 <div class="cards-container">
-    <app-card (uppCardEventClick)="cardVariantClick($event)"></app-card>
-    <app-card (uppCardEventClick)="cardVariantClick($event)"></app-card>
-    <app-card (uppCardEventClick)="cardVariantClick($event)"></app-card>
-    <app-card (uppCardEventClick)="cardVariantClick($event)"></app-card>
-    <app-card (uppCardEventClick)="cardVariantClick($event)"></app-card>
-    <app-card (uppCardEventClick)="cardVariantClick($event)"></app-card>
-</div>
+    @for (dataWord of dataWords; track dataWord.id) {
+        <app-card [dataWord]="dataWord" (onOptionSelect)="handleSelectOption($event)"></app-card>
+    }
+</div>  
 
 
 

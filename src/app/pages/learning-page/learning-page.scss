@@ -1,5 +1,6 @@
 .cards-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 15px;
+    grid-gap: 15px;
 }

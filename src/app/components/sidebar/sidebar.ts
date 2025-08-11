@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { SvgIcon } from '../ui/svg-icon/svg-icon';
 import { FormsModule } from '@angular/forms';
@@ -11,6 +11,7 @@ import { ROUTES } from '../../constants/routes';
   styleUrl: './sidebar.scss'
 })
 export class Sidebar {
+  imgLogo: string = '/assets/images/istockphoto-499680387-612x612.png'
 
   menuItems = [
     {
