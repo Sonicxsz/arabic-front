@@ -9,7 +9,8 @@
         <app-text size="m" weight="bold" color="light">{{dataWord.arabic}}</app-text>
         <div class="card__btn-wrapper">
             @for (wordRus of dataWord.option; track wordRus) {
-                <app-button (click)="selectOption(wordRus)" class="btn" color="primary" padding="m">
+                <app-button color="primary" size="m"
+                    (click)="selectOption(wordRus, dataWord.id)">
                     <app-text size="s" weight="regular" color="light">{{wordRus}}</app-text>
                 </app-button>
             }

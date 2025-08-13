@@ -11,9 +11,12 @@ import { Word } from 'app/interface/word';
 export class Card {
   @Input() dataWord!: Word
   
-  @Output() onOptionSelect = new EventEmitter<string>();
+  @Output() onOptionSelect = new EventEmitter<{
+    variant: string,
+    id: number
+  }>();
 
-  selectOption(variant: string) {
-    this.onOptionSelect.emit(variant)
+  selectOption(variant: string, id: number) {
+    this.onOptionSelect.emit({variant, id})
   }
 }
