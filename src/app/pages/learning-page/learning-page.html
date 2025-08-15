@@ -1,1 +1,9 @@
-<p>learning-page works!</p>
+<div class="cards-container">
+    @for (dataWord of dataWords; track dataWord.id) {
+        <app-card [dataWord]="dataWord" (onOptionSelect)="handleSelectOption($event)"></app-card>
+    }
+</div>  
+
+<!-- //как обробатывает клики ангуляр -->
+<!-- //как обрабатывать пользовательские событии ангуляр -->
+
